@@ -1,0 +1,206 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+/* LATIHAN 1 */
+.container-satu {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #A2B38B;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+}
+
+/* AKHIR LATIHAN 1 */
+
+/* LATIHAN 2 */
+.container-dua {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layanan {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.layanan.satu {
+    background-color: #E6BA95;
+}
+
+.layanan.dua {
+    background-color: #FAFDD6;
+}
+
+.layanan.tiga {
+    background-color: #E4E9BE;
+}
+
+/* LATIHAN 3 */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* LATIHAN 4 */
+
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #Fff;
+    margin: 10px;
+    flex: 1;
+    box-shadow: #ffff;
+    border-radius: 30;
+    -webkit-border-radius: 30;
+    -moz-border-radius: 30;
+    -ms-border-radius: 30;
+    -o-border-radius: 30;
+    border-color: #ffff;
+    border-left: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card .header {
+    height: 150px;
+    background-color: #E6BA95;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    -moz-transform: scale(1.12);
+    -ms-transform: scale(1.12);
+    -o-transform: scale(1.12);
+}
+
+
+@media(min-widht:600px) {
+    .container-empat {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+/* MEDIA QUERY RESPONSIVE */
+
+@media screen and (min-width:600px) {
+    .container-satu {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #A2B38B;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .kolom-utama {
+        flex: 3;
+        order: 2;
+    }
+
+    .sidebar-satu {
+        flex: 1;
+        order: 1;
+    }
+
+    .sidebar-dua {
+        flex: 1;
+        order: 3;
+    }
+
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width:400px) {
+    .container-satu {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #A2B38B;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .kolom-utama {
+        flex: 3;
+        order: 2;
+    }
+
+    .sidebar-satu {
+        flex: 1;
+        order: 1;
+    }
+
+    .sidebar-dua {
+        flex: 1;
+        order: 3;
+    }
+
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 25%;
+    }
+}
+
+/* AKHIR LATIHAN 2 */
